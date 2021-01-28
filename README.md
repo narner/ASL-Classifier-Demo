@@ -2,15 +2,15 @@
 
 This project demonstrates the usage of a CoreML model to classify American Sign-Language from a live video feed on iOS. The CoreML model was trained using CreateML on David Lee's American Sign Language Letters Dataset, which is [hosted on Roboflow](https://public.roboflow.com/object-detection/american-sign-language-letters).
 
-![ASL Classifier Demo](Documentation/ASL Classifier Demo.gif)
+![ASL Classifier Demo](https://github.com/narner/ASL-Classifier-Demo/blob/main/ASL%20CLassifier%20Demo/Documentation/ASL%20Classifier%20Demo.gif)
 
 
 
-![ASL Classifier Demo](Documentation/O-Detection.png)
+![ASL Classifier Demo](https://github.com/narner/ASL-Classifier-Demo/blob/main/ASL%20CLassifier%20Demo/Documentation/O-Detection.png)
 
 
 
-![ASL Classifier Demo](Documentation/L-Detection.png)
+![ASL Classifier Demo](https://github.com/narner/ASL-Classifier-Demo/blob/main/ASL%20CLassifier%20Demo/Documentation/L-Detection.png)
 
 
 

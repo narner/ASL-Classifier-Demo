@@ -14,7 +14,7 @@ This project demonstrates the usage of a CoreML model to classify American Sign-
 
 
 
-![ASL Classifier Demo](Documentation/L-Detection.png)
+![ASL Classifier Demo](Documentation/L-Detection.png	)
 
 
 
