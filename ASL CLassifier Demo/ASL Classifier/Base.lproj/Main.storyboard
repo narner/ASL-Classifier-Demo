@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vision Object Recognition View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="VisionObjectRecognitionViewController" customModule="ASL_Classifier_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MXr-k3-07Q">
+                                <rect key="frame" x="130.66666666666666" y="795" width="152.99999999999997" height="32"/>
+                                <segments>
+                                    <segment title="Debug"/>
+                                    <segment title="Info View"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentControlChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Trm-M6-wjs"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BqH-Tk-mzH">
+                                <rect key="frame" x="58" y="619" width="298.33333333333331" height="142.33333333333337"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="120"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BqH-Tk-mzH" firstAttribute="centerX" secondItem="MXr-k3-07Q" secondAttribute="centerX" id="56W-Bf-qFQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MXr-k3-07Q" secondAttribute="bottom" constant="36" id="CT5-vI-MF6"/>
+                            <constraint firstItem="MXr-k3-07Q" firstAttribute="top" secondItem="BqH-Tk-mzH" secondAttribute="bottom" constant="33.666666666666629" id="ejW-LB-ts0"/>
+                            <constraint firstItem="MXr-k3-07Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vcH-J8-892"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="previewView" destination="8bC-Xf-vdC" id="KdU-3x-Jsv"/>
+                        <outlet property="segmentControl" destination="MXr-k3-07Q" id="SdL-ep-H5P"/>
+                        <outlet property="textLabel" destination="BqH-Tk-mzH" id="iRm-ln-KqI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="73"/>
+        </scene>
+    </scenes>
+</document>
